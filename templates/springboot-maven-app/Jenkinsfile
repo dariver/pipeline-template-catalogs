@@ -6,7 +6,7 @@ pipeline {
                 container('maven') {
                     echo "${previewEnvHostname}"
                     echo "${emailRecipient}"
-                    sh "./mvn clean install"
+                    sh "mvn clean install"
                 }
             }
         }

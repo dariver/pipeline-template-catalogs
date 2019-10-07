@@ -1,2 +1,2 @@
 library '_github.com_pipeline-demo-caternberg_workflowLibs' _
-mavenProject (param1:"${gitRepo}",param2:"${credentialId}",param3:"${branch}")
+mavenProject (gitRepo:"${gitRepo}",credentialId:"${credentialId}",branch:"${branch}")

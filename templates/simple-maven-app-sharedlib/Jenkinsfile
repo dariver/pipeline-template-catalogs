@@ -1,4 +1,2 @@
 library '_github.com_pipeline-demo-caternberg_workflowLibs' _
-mySimplePipeline (param1:"${previewEnvHostname}",param2:"${emailRecipient}")
-echo "${previewEnvHostname}"
-echo "${emailRecipient}"
+mavenProject (param1:"${gitRepo}",param2:"${credentialId}",param3:"${branch}")

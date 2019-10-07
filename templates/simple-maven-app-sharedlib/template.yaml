@@ -4,7 +4,9 @@ version: 1
 name: Simple Maven Shared Lib  Template
 description: Simple Maven Shared Lib  Template
 parameters:
-  - name: previewEnvHostname
-    displayName: Preview env hostname
-  - name: emailRecipient
-    displayName: Email address for build notifications
+  - name: gitRepo
+    displayName: Gite Repoistory
+  - name: branch
+    displayName: Git Branch to clone code from
+  - name: credentialId
+    displayName: Jenkins credetialId for git

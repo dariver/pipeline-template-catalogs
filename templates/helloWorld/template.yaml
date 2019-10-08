@@ -1,0 +1,8 @@
+type: pipeline-template
+version: 1
+
+name: Heloo World Template
+description: Heloo World Template
+parameters:
+  - name: FirstName
+    displayName: your Firstname

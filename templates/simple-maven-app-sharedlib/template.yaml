@@ -1,8 +1,8 @@
 type: pipeline-template
 version: 1
 
-name: Simple Maven Shared Lib  Template
-description: Simple Maven Shared Lib  Template
+name: Simple Maven Shared Lib Template
+description: Simple Maven Shared Lib Template
 parameters:
   - name: gitRepo
     displayName: Gite Repoistory

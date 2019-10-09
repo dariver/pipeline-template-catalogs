@@ -1,7 +1,15 @@
 type: pipeline-template
 version: 1
 name: A Multibranch Template
+description: A Multibranch template
 templateType: MULTIBRANCH
+parameters:
+  - name: gitRepo
+    displayName: Git Repoistory
+  - name: organsisation
+    displayName: GH organsisation
+  - name: credentialId
+    displayName: Jenkins credetialId for git
 multibranch:
   branchSource:
     github:

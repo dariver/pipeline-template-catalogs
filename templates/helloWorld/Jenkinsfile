@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('Say Hello') {
             steps {
-                echo "Hello World! ${name}"
-              //  echo "${GlobalVars.foo}"
+                echo "Hello World! ${firstname}"
+                echo "${GlobalVars.foo}"
             }
         }
     }

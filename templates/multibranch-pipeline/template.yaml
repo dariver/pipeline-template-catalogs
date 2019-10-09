@@ -3,10 +3,13 @@ version: 1
 name: A Multibranch Template
 templateType: MULTIBRANCH
 parameters:
-  - name: repoUrl
+  - name: owner
     type: string
-    displayName: Repo
-multibranch:
-  branchSource:
-    git:
-      remote: ${repoUrl}
+    displayName: repoowner
+  - name: repoName
+    type: string
+    displayName: repoName
+  - name: credentialId
+    type: string
+    displayName: credentialId
+

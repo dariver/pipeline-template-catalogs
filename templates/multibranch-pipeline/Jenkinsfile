@@ -1,12 +1,15 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      steps {
-        sh """
-          ./gradlew clean build
-        """
-      }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+              multibranch:
+                branchSource:
+                  github:
+                    repoOwner: ${owner}
+                    repository: ${repoName}
+                    credentialsId: ${credentialId}
+            }
+        }
     }
-  }
 }

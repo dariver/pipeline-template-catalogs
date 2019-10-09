@@ -1,0 +1,6 @@
+type: pipeline-template
+version: 1
+
+name: Parametrized Template
+description: Parametrized Template
+

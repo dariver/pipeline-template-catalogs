@@ -1,2 +1,13 @@
 library '_github.com_pipeline-demo-caternberg_workflowLibs' _
-mySimplePipeline(sayHello:"${name}")
+import de.caternberg.pipeline.helper.GlobalVars
+pipeline {
+    agent any
+    stages {
+        stage('Say Hello') {
+            steps {
+                echo "Hello World! ${name}"
+              //  echo "${GlobalVars.foo}"
+            }
+        }
+    }
+}

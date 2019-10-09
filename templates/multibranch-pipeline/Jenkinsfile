@@ -3,12 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-              multibranch:
-                branchSource:
-                  github:
-                    repoOwner: ${owner}
-                    repository: ${repoName}
-                    credentialsId: ${credentialId}
+               sh "ls -l"
             }
         }
     }

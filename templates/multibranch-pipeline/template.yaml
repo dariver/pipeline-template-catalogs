@@ -2,14 +2,10 @@ type: pipeline-template
 version: 1
 name: A Multibranch Template
 templateType: MULTIBRANCH
-parameters:
-  - name: owner
-    type: string
-    displayName: repoowner
-  - name: repoName
-    type: string
-    displayName: repoName
-  - name: credentialId
-    type: string
-    displayName: credentialId
+multibranch:
+  branchSource:
+    github:
+      repoOwner: pipeline-demo-caternberg
+      repository: ${repoName}
+      credentialsId: ${credentialId}
 

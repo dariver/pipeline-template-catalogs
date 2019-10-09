@@ -1,5 +1,4 @@
 library '_github.com_pipeline-demo-caternberg_workflowLibs' _
-import de.caternberg.pipeline.helper.GlobalVars
 pipeline {
     agent any
     stages {

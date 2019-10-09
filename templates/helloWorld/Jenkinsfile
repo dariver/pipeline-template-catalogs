@@ -1,2 +1,2 @@
 library '_github.com_pipeline-demo-caternberg_workflowLibs' _
-mySimplePipeline(sayHello:"${FirstName}")
+mySimplePipeline(sayHello:"${name}")

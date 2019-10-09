@@ -4,7 +4,7 @@ name: A Multibranch Template
 description: A Multibranch template
 templateType: MULTIBRANCH
 parameters:
-  - name: gitRepo
+  - name: repoName
     displayName: Git Repoistory
   - name: organsisation
     displayName: GH organsisation
@@ -13,7 +13,7 @@ parameters:
 multibranch:
   branchSource:
     github:
-      repoOwner: pipeline-demo-caternberg
+      repoOwner: ${organsisation}
       repository: ${repoName}
       credentialsId: ${credentialId}
 

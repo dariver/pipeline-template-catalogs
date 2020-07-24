@@ -9,4 +9,4 @@ parameters:
   - name: serviceAccount
     displayName: Service account
     type: string
-    defaultValue: default
+    defaultValue: INVALID_SA
